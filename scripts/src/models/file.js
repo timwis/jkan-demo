@@ -7,7 +7,8 @@ export default State.extend({
     repoOwner: 'string',
     repoName: 'string',
     repoBranch: 'string',
-    filePath: 'string'
+    filePath: 'string',
+    defaultDir: 'string'
   },
   session: {
     user: 'state'
@@ -38,10 +39,22 @@ export default State.extend({
       })
     })
   },
-  save: function (contents) {
+  create: function (fileName, contents) {
+    this.filePath = (this.defaultDir ? this.defaultDir + '/' : '') + fileName
+    return this.save(contents, `Created ${fileName}`)
+  },
+  save: function (contents, commitMsg) {
     return new Promise((resolve, reject) => {
-      var commitMsg = `Updated ${this.fileName}`
+      if (!commitMsg) commitMsg = `Updated ${this.fileName}`
       this.repo.write(this.repoBranch, this.filePath, contents, commitMsg, {}, (err, data) => {
+        if (err) reject(err)
+        else resolve(data)
+      })
+    })
+  },
+  remove: function () {
+    return new Promise((resolve, reject) => {
+      this.repo.remove(this.repoBranch, this.filePath, (err, data) => {
         if (err) reject(err)
         else resolve(data)
       })
