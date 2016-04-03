@@ -2,13 +2,12 @@ title: JKAN
 description: A lightweight, backend-free open data portal, powered by Jekyll.
 baseurl: ""
 
-# GitHub Repo Info
-repository_owner: timwis
-repository_name: jkan
-
 # Authentication
 github_client_id: 777ae16009a6f9e6d451
 gatekeeper_host: https://jkan-gatekeeper.herokuapp.com
+
+# Dataset schema
+schema: default
 
 # Categories
 category_list:
@@ -26,6 +25,9 @@ category_list:
   - Real Estate / Land Records
   - Transportation
   - Uncategorized
+
+# Link for the "fork me on github" banner. Remove this line to suppress banner.
+fork_me_url: https://github.com/timwis/jkan
 
 # Nav bar
 navigation:

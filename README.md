@@ -1,4 +1,4 @@
-# JKAN [![Build Status](https://travis-ci.org/timwis/jkan.svg?branch=gh-pages)](https://travis-ci.org/timwis/JKAN) [![Join the chat at https://gitter.im/timwis/jkan](https://badges.gitter.im/timwis/jkan.svg)](https://gitter.im/timwis/jkan?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# JKAN [![Build Status](https://travis-ci.org/timwis/jkan.svg?branch=gh-pages)](https://travis-ci.org/timwis/jkan) [![Join the chat at https://gitter.im/timwis/jkan](https://badges.gitter.im/timwis/jkan.svg)](https://gitter.im/timwis/jkan?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A lightweight, backend-free open data portal, powered by Jekyll
 
 Open-source data portals can be [really](https://twitter.com/waldojaquith/status/282599673569619969).
@@ -13,21 +13,9 @@ out or give feedback.
 [Demo site](https://demo.jkan.io)
 
 ## Installation
-Just click "Fork" at the top-right of this page. (You'll need a [GitHub account](https://github.com/join?return_to=%2Ftimwis%2Fjkan&source=login)).
-You can then access it at `<your_github_username>.github.io/jkan`.
+See [Get Started](https://jkan.io/#get-started) on [jkan.io](https://jkan.io)
 
-From there, you can use the [built-in edit button](https://help.github.com/articles/editing-files-in-your-repository/) 
-on github to edit [`_config.yml`](_config.yml) and the datasets in the [`_datasets`](_datasets) directory to manage
-your site.
-
-Alternatively, you can use JKAN's user-friendly editing pages.
-
-![Screenshot of user-friendly editing page](http://i.imgur.com/e12N0oQ.png)
-
-But doing so requires one more installation step: setting up authentication. Fortunately there's a user-friendly page
-for doing that too. Just go to your setup page (ie. `<your_github_username>.github.io/jkan/setup`)
-
-![Screenshot of setup page](http://i.imgur.com/PARLkvU.png)
+For configuration details, see the [wiki](https://github.com/timwis/jkan/wiki)
 
 ## Development
 * Requires [Jekyll](http://jekyllrb.com), a ruby thing
