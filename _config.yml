@@ -9,7 +9,7 @@ theme: Paper
 
 # Authentication
 github_client_id: 777ae16009a6f9e6d451
-gatekeeper_host: https://jkan-gatekeeper.herokuapp.com
+gatekeeper_host: https://gatekeeper-jkan-demo.onrender.com
 
 # Dataset schema
 schema: default
