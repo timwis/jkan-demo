@@ -14,3 +14,56 @@ collections:
       - label: Title
         name: title
         widget: string
+
+      - label: Organization
+        name: organization
+        widget: relation
+        collection: organizations
+        value_field: title
+        search_fields: title
+
+      - label: Description
+        name: notes
+        widget: text
+
+      - label: Resources
+        name: resources
+        widget: list
+        fields:
+          - label: Resource Name
+            name: name
+            widget: string
+          - label: URL
+            name: url
+            widget: string
+          - label: Format
+            name: format
+            widget: select
+            options:
+              - api
+              - csv
+              - json
+              - geojson
+              - html
+              - kml
+              - kmz
+              - shp
+              - xml
+                
+  - name: organization
+    label: Organization
+    folder: _organizations
+    create: true
+    slug: "{{title}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Description
+        name: description
+        widget: text
+
+      - label: Logo
+        name: logo
+        widget: string
