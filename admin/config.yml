@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: gh-pages
+
+media_folder: "img/uploads"
+
+collections:
+  - name: dataset
+    label: Dataset
+    folder: _datasets
+    create: true
+    slug: "{{title}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
